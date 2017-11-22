@@ -1,12 +1,13 @@
 class SlowFoodApp
   get '/' do
+    @products = Product.all
     erb :welcome
   end
 
   get '/login' do
 
   end
-
+ 
   get '/signup' do
 
   end
