@@ -3,7 +3,8 @@ Welcome to my site!
 <h2> Starters </h2>
 <% @products.each do |product| %>
 
-  <p>
+  <% if product.category == 'Starter' %>
+    <h1>
       <%= "#{product.name} - #{product.price} kr" %>
     </h1>
 
@@ -39,6 +40,5 @@ Welcome to my site!
     <p>
       <%= product.description %>
     </p>
-
   <% end %>
 <% end %>
