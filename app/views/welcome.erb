@@ -1,8 +1,15 @@
 Welcome to my site!
 
 <% @products.each do |product| %>
+  <h1>
+    <%= "#{product.name} - #{product.price} kr" %>
+  </h1>
   <p>
-    <%= product.name %>
+    <%= product.description %>
   </p>
+
+  <h2>
+    <%= product.category %>
+  </h2>
 
 <% end %>
