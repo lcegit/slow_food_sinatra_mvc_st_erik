@@ -1,5 +1,6 @@
 class SlowFoodApp
   get '/' do
+    @dishes = Dish.all
     erb :welcome
   end
 
