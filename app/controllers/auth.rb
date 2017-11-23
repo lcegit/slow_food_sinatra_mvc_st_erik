@@ -9,15 +9,11 @@ class SlowFoodApp
   end
 
   get '/signup' do
-    # erb :signup
+
   end
 
   get '/users' do
     @users = User.all
     erb :users_index
   end
-
-  # post '/register' do
-  #   binding.pry
-  # end
 end

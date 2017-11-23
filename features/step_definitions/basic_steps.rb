@@ -28,8 +28,3 @@ end
 Then(/^I would like to see "([^"]*)" with an owner named "([^"]*)"$/) do |name, owner|
   expected_output = "#{name} - #{owner}"
 end
-
-Then(/^I see a dish with a category of "([^"]*)"$/) do |category_name|
-  expected_output = "#{category_name}"
-  expect(page).to have_content expected_output
-end
