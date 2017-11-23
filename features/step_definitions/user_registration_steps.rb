@@ -1,5 +1,5 @@
 Given(/^I am on the registration page$/) do
-  visit '/registration'
+  visit '/signup'
 end
 
 Given(/^I enter "([^"]*)" with "([^"]*)"$/) do |label, value|
