@@ -24,7 +24,3 @@ Then(/^I would like to see "([^"]*)" with the price of "([^"]*)"$/) do |product_
   expected_output = "#{product_name} - #{price}"
   expect(page).to have_content expected_output
 end
-
-Then(/^I would like to see "([^"]*)" with an owner named "([^"]*)"$/) do |name, owner|
-  expected_output = "#{name} - #{owner}"
-end
