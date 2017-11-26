@@ -11,7 +11,7 @@ Feature: User can add dish to order
       | Cake   | 30    | Super       | Dessert  |
 
       Scenario: User clicks "Order" on a dish an creates an order
-        Given I visit the site
+        Given I visit the page
         And I click "Order" on "Kebab"
         Then there should be an order made for me
         And "Kebab" should be in the Order
