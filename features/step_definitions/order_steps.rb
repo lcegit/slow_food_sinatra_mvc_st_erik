@@ -3,15 +3,13 @@ When(/^I visit the page$/) do
 end
 
 Given(/^the following products exist$/) do |table|
-  table.hashes.each do |product|
-    Product.create(product)
-  end
+  table.hashes.each {|product| Product.create(product)}
 end
 
 
 Given(/^I click "([^"]*)" on "([^"]*)"$/) do |order, dish_name|
   @dish = Product.find_by(name: dish_name)
-  within("#product-#{@dish.id}") { click_button order }
+  within("#product-#{@dish.id}") {click_button order}
 end
 
 Then(/^there should be an order made for me$/) do
