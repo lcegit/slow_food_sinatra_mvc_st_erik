@@ -7,7 +7,7 @@ class SlowFoodApp
       order = Order.create
       session[:order_id] = order.id
     end
-    order_item = OrderItem(product: product, order: order)
+    order_item = OrderItem.create(product: product, order: order)
     redirect '/', notice: "#{order_item.product.name} has been added to your order"
   end
 end
