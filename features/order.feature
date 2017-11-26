@@ -16,3 +16,5 @@ Feature: User can add dish to order
         Then there should be an order made for me
         And "Kebab" should be in the Order
         And I should be notified "Kebab has been added to your order"
+
+        When
